@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    var cantidadE = parseInt(prompt("ingrese la cantidad de examnes"));
+    var examen = 1;
+    var suma = 0;
+    var nota = 0;
+
+        while (examen<=cantidadE) {
+            nota = parseFloat ( prompt('ingrese nota N ${examen}') )
+            if (nota >=0 && nota <=10) {
+                suma += nota
+                examen++
+            }else{
+                alert("ingrese una nota del 1 al 10")
+            }
+        }
+        console.log(examen)
+        var promedio = suma/cantidadE
+        console.log( 'el promedio es ${promedio.toFixed}')
+
+
+    </script>
+
+    
+</body>
+</html>
