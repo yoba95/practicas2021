@@ -13,10 +13,10 @@
     var cantidadE = parseInt(prompt("ingrese la cantidad de examnes"));
     var examen = 1;
     var suma = 0;
-    var nota = 0;
+   //var nota = 0;
 
         while (examen<=cantidadE) {
-            nota = parseFloat ( prompt('ingrese nota N ${examen}') )
+           let nota = parseFloat ( prompt('ingrese nota N ${examen}') )
             if (nota >=0 && nota <=10) {
                 suma += nota
                 examen++
@@ -26,8 +26,9 @@
         }
         console.log(examen)
         var promedio = suma/cantidadE
-        console.log( 'el promedio es ${promedio.toFixed}')
-
+        console.log( `el promedio es ${promedio.toFixed}` )
+      //console.log( 'el promedio es ${promedio.toFixed}')
+      
 
     </script>
 
